@@ -42,7 +42,7 @@ jobs:
           - os: windows-latest
             goos: windows
             goarch: amd64
-            gotags: cmount
+            gotags: ''
             ext: '.exe'
             install_deps: false
             cgo_enabled: false
