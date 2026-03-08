@@ -24,24 +24,28 @@ jobs:
             gotags: cmount
             ext: ''
             install_deps: true
+            cgo_enabled: true
           - os: ubuntu-latest
             goos: linux
             goarch: 386
-            gotags: cmount
+            gotags: ''
             ext: ''
-            install_deps: true
+            install_deps: false
+            cgo_enabled: false
           - os: ubuntu-latest
             goos: linux
             goarch: arm64
-            gotags: cmount
+            gotags: ''
             ext: ''
-            install_deps: true
+            install_deps: false
+            cgo_enabled: false
           - os: windows-latest
             goos: windows
             goarch: amd64
             gotags: cmount
             ext: '.exe'
             install_deps: false
+            cgo_enabled: false
 
     steps:
       - name: Checkout
@@ -62,7 +66,7 @@ jobs:
         env:
           GOOS: ${{ matrix.goos }}
           GOARCH: ${{ matrix.goarch }}
-          CGO_ENABLED: ${{ matrix.goos == 'linux' && 1 || 0 }}
+          CGO_ENABLED: ${{ matrix.cgo_enabled }}
         run: |
           go build -v -tags "${{ matrix.gotags }}" -ldflags "-s -w" -o rclone${{ matrix.ext }}
 
