@@ -23,21 +23,25 @@ jobs:
             goarch: amd64
             gotags: cmount
             ext: ''
+            install_deps: true
           - os: ubuntu-latest
             goos: linux
             goarch: 386
             gotags: cmount
             ext: ''
+            install_deps: true
           - os: ubuntu-latest
             goos: linux
             goarch: arm64
             gotags: cmount
             ext: ''
+            install_deps: true
           - os: windows-latest
             goos: windows
             goarch: amd64
             gotags: cmount
             ext: '.exe'
+            install_deps: false
 
     steps:
       - name: Checkout
@@ -47,6 +51,12 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.25'
+
+      - name: Install FUSE (Linux)
+        if: matrix.install_deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libfuse-dev fuse
 
       - name: Build
         env:
