@@ -3,36 +3,35 @@
 <!-- markdownlint-disable-next-line no-inline-html -->
 [<img src="https://rclone.org/img/logo_on_dark__horizontal_color.svg" width="50%" alt="rclone logo">](https://rclone.org/#gh-dark-mode-only)
 
-[Website](https://rclone.org) |
-[Documentation](https://rclone.org/docs/) |
-[Download](https://rclone.org/downloads/) |
-[Contributing](CONTRIBUTING.md) |
-[Changelog](https://rclone.org/changelog/) |
-[Installation](https://rclone.org/install/) |
-[Forum](https://forum.rclone.org/)
+[网站](https://rclone.org) |
+[文档](https://rclone.org/docs/) |
+[下载](https://rclone.org/downloads/) |
+[贡献](CONTRIBUTING.md) |
+[更新日志](https://rclone.org/changelog/) |
+[安装](https://rclone.org/install/) |
+[论坛](https://forum.rclone.org/)
 
-[![Build Status](https://github.com/rclone/rclone/workflows/build/badge.svg)](https://github.com/rclone/rclone/actions?query=workflow%3Abuild)
+[![构建状态](https://github.com/rclone/rclone/workflows/build/badge.svg)](https://github.com/rclone/rclone/actions?query=workflow%3Abuild)
 [![Go Report Card](https://goreportcard.com/badge/github.com/rclone/rclone)](https://goreportcard.com/report/github.com/rclone/rclone)
 [![GoDoc](https://godoc.org/github.com/rclone/rclone?status.svg)](https://godoc.org/github.com/rclone/rclone)
-[![Docker Pulls](https://img.shields.io/docker/pulls/rclone/rclone)](https://hub.docker.com/r/rclone/rclone)
+[![Docker 拉取次数](https://img.shields.io/docker/pulls/rclone/rclone)](https://hub.docker.com/r/rclone/rclone)
 
 # Rclone
 
-Rclone *("rsync for cloud storage")* is a command-line program to sync files and
-directories to and from different cloud storage providers.
+Rclone *（“云存储版 rsync”）* 是一个命令行程序，用于在不同云存储提供商之间同步文件和目录。
 
-## Storage providers
+## 存储提供商
 
 - 1Fichier [:page_facing_up:](https://rclone.org/fichier/)
 - Akamai Netstorage [:page_facing_up:](https://rclone.org/netstorage/)
-- Alibaba Cloud (Aliyun) Object Storage System (OSS) [:page_facing_up:](https://rclone.org/s3/#alibaba-oss)
+- 阿里云（Aliyun）对象存储系统（OSS）[:page_facing_up:](https://rclone.org/s3/#alibaba-oss)
 - Amazon S3 [:page_facing_up:](https://rclone.org/s3/)
-- ArvanCloud Object Storage (AOS) [:page_facing_up:](https://rclone.org/s3/#arvan-cloud-object-storage-aos)
-- Bizfly Cloud Simple Storage [:page_facing_up:](https://rclone.org/s3/#bizflycloud)
+- ArvanCloud 对象存储（AOS）[:page_facing_up:](https://rclone.org/s3/#arvan-cloud-object-storage-aos)
+- Bizfly Cloud 简单存储 [:page_facing_up:](https://rclone.org/s3/#bizflycloud)
 - Backblaze B2 [:page_facing_up:](https://rclone.org/b2/)
 - Box [:page_facing_up:](https://rclone.org/box/)
-- Ceph [:page_facing_up:](https://rclone.org/s3/#ceph)
-- China Mobile Ecloud Elastic Object Storage (EOS) [:page_facing_up:](https://rclone.org/s3/#china-mobile-ecloud-eos)
+- Ceph [:page_facing_up:](https://rclone.org/s3/#ceph/)
+- 中国移动云弹性对象存储（EOS）[:page_facing_up:](https://rclone.org/s3/#china-mobile-ecloud-eos)
 - Citrix ShareFile [:page_facing_up:](https://rclone.org/sharefile/)
 - Cloudflare R2 [:page_facing_up:](https://rclone.org/s3/#cloudflare-r2)
 - Cloudinary [:page_facing_up:](https://rclone.org/cloudinary/)
@@ -44,7 +43,7 @@ directories to and from different cloud storage providers.
 - Dropbox [:page_facing_up:](https://rclone.org/dropbox/)
 - Enterprise File Fabric [:page_facing_up:](https://rclone.org/filefabric/)
 - Exaba [:page_facing_up:](https://rclone.org/s3/#exaba)
-- Fastly Object Storage [:page_facing_up:](https://rclone.org/s3/#fastly)
+- Fastly 对象存储 [:page_facing_up:](https://rclone.org/s3/#fastly)
 - Fastmail Files [:page_facing_up:](https://rclone.org/webdav/#fastmail-files)
 - FileLu [:page_facing_up:](https://rclone.org/filelu/)
 - Filen [:page_facing_up:](https://rclone.org/filen/)
@@ -55,30 +54,30 @@ directories to and from different cloud storage providers.
 - Google Cloud Storage [:page_facing_up:](https://rclone.org/googlecloudstorage/)
 - Google Drive [:page_facing_up:](https://rclone.org/drive/)
 - Google Photos [:page_facing_up:](https://rclone.org/googlephotos/)
-- HDFS (Hadoop Distributed Filesystem) [:page_facing_up:](https://rclone.org/hdfs/)
-- Hetzner Object Storage [:page_facing_up:](https://rclone.org/s3/#hetzner)
+- HDFS（Hadoop 分布式文件系统）[:page_facing_up:](https://rclone.org/hdfs/)
+- Hetzner 对象存储 [:page_facing_up:](https://rclone.org/s3/#hetzner)
 - Hetzner Storage Box [:page_facing_up:](https://rclone.org/sftp/#hetzner-storage-box)
 - HiDrive [:page_facing_up:](https://rclone.org/hidrive/)
 - HTTP [:page_facing_up:](https://rclone.org/http/)
-- Huawei Cloud Object Storage Service(OBS) [:page_facing_up:](https://rclone.org/s3/#huawei-obs)
+- 华为云对象存储服务（OBS）[:page_facing_up:](https://rclone.org/s3/#huawei-obs)
 - iCloud Drive [:page_facing_up:](https://rclone.org/iclouddrive/)
 - ImageKit [:page_facing_up:](https://rclone.org/imagekit/)
 - Internet Archive [:page_facing_up:](https://rclone.org/internetarchive/)
 - Internxt [:page_facing_up:](https://rclone.org/internxt/)
 - Jottacloud [:page_facing_up:](https://rclone.org/jottacloud/)
 - IBM COS S3 [:page_facing_up:](https://rclone.org/s3/#ibm-cos-s3)
-- Intercolo Object Storage [:page_facing_up:](https://rclone.org/s3/#intercolo)
+- Intercolo 对象存储 [:page_facing_up:](https://rclone.org/s3/#intercolo)
 - IONOS Cloud [:page_facing_up:](https://rclone.org/s3/#ionos)
 - Koofr [:page_facing_up:](https://rclone.org/koofr/)
-- Leviia Object Storage [:page_facing_up:](https://rclone.org/s3/#leviia)
-- Liara Object Storage [:page_facing_up:](https://rclone.org/s3/#liara-object-storage)
+- Leviia 对象存储 [:page_facing_up:](https://rclone.org/s3/#leviia)
+- Liara 对象存储 [:page_facing_up:](https://rclone.org/s3/#liara-object-storage)
 - Linkbox [:page_facing_up:](https://rclone.org/linkbox)
-- Linode Object Storage [:page_facing_up:](https://rclone.org/s3/#linode)
-- Magalu Object Storage [:page_facing_up:](https://rclone.org/s3/#magalu)
+- Linode 对象存储 [:page_facing_up:](https://rclone.org/s3/#linode)
+- Magalu 对象存储 [:page_facing_up:](https://rclone.org/s3/#magalu)
 - Mail.ru Cloud [:page_facing_up:](https://rclone.org/mailru/)
 - Memset Memstore [:page_facing_up:](https://rclone.org/swift/)
 - MEGA [:page_facing_up:](https://rclone.org/mega/)
-- MEGA S4 Object Storage [:page_facing_up:](https://rclone.org/s3/#mega)
+- MEGA S4 对象存储 [:page_facing_up:](https://rclone.org/s3/#mega)
 - Memory [:page_facing_up:](https://rclone.org/memory/)
 - Microsoft Azure Blob Storage [:page_facing_up:](https://rclone.org/azureblob/)
 - Microsoft Azure Files Storage [:page_facing_up:](https://rclone.org/azurefiles/)
@@ -89,10 +88,10 @@ directories to and from different cloud storage providers.
 - OpenDrive [:page_facing_up:](https://rclone.org/opendrive/)
 - OpenStack Swift [:page_facing_up:](https://rclone.org/swift/)
 - Oracle Cloud Storage [:page_facing_up:](https://rclone.org/swift/)
-- Oracle Object Storage [:page_facing_up:](https://rclone.org/oracleobjectstorage/)
+- Oracle 对象存储 [:page_facing_up:](https://rclone.org/oracleobjectstorage/)
 - Outscale [:page_facing_up:](https://rclone.org/s3/#outscale)
-- OVHcloud Object Storage (Swift) [:page_facing_up:](https://rclone.org/swift/)
-- OVHcloud Object Storage (S3-compatible) [:page_facing_up:](https://rclone.org/s3/#ovhcloud)
+- OVHcloud 对象存储（Swift）[:page_facing_up:](https://rclone.org/swift/)
+- OVHcloud 对象存储（兼容 S3）[:page_facing_up:](https://rclone.org/s3/#ovhcloud)
 - ownCloud [:page_facing_up:](https://rclone.org/webdav/#owncloud)
 - pCloud [:page_facing_up:](https://rclone.org/pcloud/)
 - Petabox [:page_facing_up:](https://rclone.org/s3/#petabox)
@@ -102,90 +101,84 @@ directories to and from different cloud storage providers.
 - put.io [:page_facing_up:](https://rclone.org/putio/)
 - Proton Drive [:page_facing_up:](https://rclone.org/protondrive/)
 - QingStor [:page_facing_up:](https://rclone.org/qingstor/)
-- Qiniu Cloud Object Storage (Kodo) [:page_facing_up:](https://rclone.org/s3/#qiniu)
+- 七牛云对象存储（Kodo）[:page_facing_up:](https://rclone.org/s3/#qiniu)
 - Rabata Cloud Storage [:page_facing_up:](https://rclone.org/s3/#Rabata)
 - Quatrix [:page_facing_up:](https://rclone.org/quatrix/)
 - Rackspace Cloud Files [:page_facing_up:](https://rclone.org/swift/)
-- RackCorp Object Storage [:page_facing_up:](https://rclone.org/s3/#RackCorp)
+- RackCorp 对象存储 [:page_facing_up:](https://rclone.org/s3/#RackCorp)
 - rsync.net [:page_facing_up:](https://rclone.org/sftp/#rsync-net)
 - Scaleway [:page_facing_up:](https://rclone.org/s3/#scaleway)
 - Seafile [:page_facing_up:](https://rclone.org/seafile/)
 - Seagate Lyve Cloud [:page_facing_up:](https://rclone.org/s3/#lyve)
 - SeaweedFS [:page_facing_up:](https://rclone.org/s3/#seaweedfs)
-- Selectel Object Storage [:page_facing_up:](https://rclone.org/s3/#selectel)
-- Servercore Object Storage [:page_facing_up:](https://rclone.org/s3/#servercore)
+- Selectel 对象存储 [:page_facing_up:](https://rclone.org/s3/#selectel)
+- Servercore 对象存储 [:page_facing_up:](https://rclone.org/s3/#servercore)
 - SFTP [:page_facing_up:](https://rclone.org/sftp/)
 - Shade [:page_facing_up:](https://rclone.org/shade/)
 - SMB / CIFS [:page_facing_up:](https://rclone.org/smb/)
 - Spectra Logic [:page_facing_up:](https://rclone.org/s3/#spectralogic)
 - Storj [:page_facing_up:](https://rclone.org/storj/)
 - SugarSync [:page_facing_up:](https://rclone.org/sugarsync/)
-- Synology C2 Object Storage [:page_facing_up:](https://rclone.org/s3/#synology-c2)
-- Tencent Cloud Object Storage (COS) [:page_facing_up:](https://rclone.org/s3/#tencent-cos)
+- Synology C2 对象存储 [:page_facing_up:](https://rclone.org/s3/#synology-c2)
+- 腾讯云对象存储（COS）[:page_facing_up:](https://rclone.org/s3/#tencent-cos)
 - Uloz.to [:page_facing_up:](https://rclone.org/ulozto/)
 - Wasabi [:page_facing_up:](https://rclone.org/s3/#wasabi)
 - WebDAV [:page_facing_up:](https://rclone.org/webdav/)
 - Yandex Disk [:page_facing_up:](https://rclone.org/yandex/)
-- Zadara Object Storage [:page_facing_up:](https://rclone.org/s3/#zadara)
+- Zadara 对象存储 [:page_facing_up:](https://rclone.org/s3/#zadara)
 - Zoho WorkDrive [:page_facing_up:](https://rclone.org/zoho/)
 - Zata.ai [:page_facing_up:](https://rclone.org/s3/#Zata)
-- The local filesystem [:page_facing_up:](https://rclone.org/local/)
+- 本地文件系统 [:page_facing_up:](https://rclone.org/local/)
 
-Please see [the full list of all storage providers and their features](https://rclone.org/overview/)
+请参阅[所有存储提供商及其功能的完整列表](https://rclone.org/overview/)
 
-### Virtual storage providers
+### 虚拟存储提供商
 
-These backends adapt or modify other storage providers
+这些后端会适配或修改其他存储提供商
 
-- Alias: rename existing remotes [:page_facing_up:](https://rclone.org/alias/)
-- Archive: read archive files [:page_facing_up:](https://rclone.org/archive/)
-- Cache: cache remotes (DEPRECATED) [:page_facing_up:](https://rclone.org/cache/)
-- Chunker: split large files [:page_facing_up:](https://rclone.org/chunker/)
-- Combine: combine multiple remotes into a directory tree [:page_facing_up:](https://rclone.org/combine/)
-- Compress: compress files [:page_facing_up:](https://rclone.org/compress/)
-- Crypt: encrypt files [:page_facing_up:](https://rclone.org/crypt/)
-- Hasher: hash files [:page_facing_up:](https://rclone.org/hasher/)
-- Union: join multiple remotes to work together [:page_facing_up:](https://rclone.org/union/)
+- Alias：重命名现有远程存储 [:page_facing_up:](https://rclone.org/alias/)
+- Archive：读取归档文件 [:page_facing_up:](https://rclone.org/archive/)
+- Cache：缓存远程存储（已弃用）[:page_facing_up:](https://rclone.org/cache/)
+- Chunker：拆分大文件 [:page_facing_up:](https://rclone.org/chunker/)
+- Combine：将多个远程存储组合成目录树 [:page_facing_up:](https://rclone.org/combine/)
+- Compress：压缩文件 [:page_facing_up:](https://rclone.org/compress/)
+- Crypt：加密文件 [:page_facing_up:](https://rclone.org/crypt/)
+- Hasher：计算哈希 [:page_facing_up:](https://rclone.org/hasher/)
+- Union：将多个远程存储联合起来协同工作 [:page_facing_up:](https://rclone.org/union/)
 
-## Features
+## 功能
 
-- MD5/SHA-1 hashes checked at all times for file integrity
-- Timestamps preserved on files
-- Partial syncs supported on a whole file basis
-- [Copy](https://rclone.org/commands/rclone_copy/) mode to just copy new/changed
-  files
-- [Sync](https://rclone.org/commands/rclone_sync/) (one way) mode to make a directory
-  identical
-- [Bisync](https://rclone.org/bisync/) (two way) to keep two directories in sync
-  bidirectionally
-- [Check](https://rclone.org/commands/rclone_check/) mode to check for file hash
-  equality
-- Can sync to and from network, e.g. two different cloud accounts
-- Optional large file chunking ([Chunker](https://rclone.org/chunker/))
-- Optional transparent compression ([Compress](https://rclone.org/compress/))
-- Optional encryption ([Crypt](https://rclone.org/crypt/))
-- Optional FUSE mount ([rclone mount](https://rclone.org/commands/rclone_mount/))
-- Multi-threaded downloads to local disk
-- Can [serve](https://rclone.org/commands/rclone_serve/) local or remote files
-  over HTTP/WebDAV/FTP/SFTP/DLNA
+- 始终检查 MD5/SHA-1 哈希以确保文件完整性
+- 保留文件时间戳
+- 支持基于整文件的部分同步
+- [Copy](https://rclone.org/commands/rclone_copy/) 模式，仅复制新增/变更的文件
+- [Sync](https://rclone.org/commands/rclone_sync/)（单向）模式，使目录保持完全一致
+- [Bisync](https://rclone.org/bisync/)（双向）模式，以双向方式保持两个目录同步
+- [Check](https://rclone.org/commands/rclone_check/) 模式，用于检查文件哈希是否相等
+- 可以在网络之间同步，例如两个不同的云账户之间
+- 可选的大文件分块（[Chunker](https://rclone.org/chunker/)）
+- 可选的透明压缩（[Compress](https://rclone.org/compress/)）
+- 可选的加密（[Crypt](https://rclone.org/crypt/)）
+- 可选的 FUSE 挂载（[rclone mount](https://rclone.org/commands/rclone_mount/)）
+- 多线程下载到本地磁盘
+- 可以通过 [serve](https://rclone.org/commands/rclone_serve/) 在 HTTP/WebDAV/FTP/SFTP/DLNA 上提供本地或远程文件服务
 
-## Installation & documentation
+## 安装与文档
 
-Please see the [rclone website](https://rclone.org/) for:
+请访问 [rclone 网站](https://rclone.org/) 了解：
 
-- [Installation](https://rclone.org/install/)
-- [Documentation & configuration](https://rclone.org/docs/)
-- [Changelog](https://rclone.org/changelog/)
-- [FAQ](https://rclone.org/faq/)
-- [Storage providers](https://rclone.org/overview/)
-- [Forum](https://forum.rclone.org/)
-- ...and more
+- [安装](https://rclone.org/install/)
+- [文档与配置](https://rclone.org/docs/)
+- [更新日志](https://rclone.org/changelog/)
+- [常见问题](https://rclone.org/faq/)
+- [存储提供商](https://rclone.org/overview/)
+- [论坛](https://forum.rclone.org/)
+- ……以及更多内容
 
-## Downloads
+## 下载
 
 - <https://rclone.org/downloads/>
 
-## License
+## 许可证
 
-This is free software under the terms of the MIT license (check the
-[COPYING file](/COPYING) included in this package).
+这是在 MIT 许可证条款下发布的自由软件（请查看本软件包中附带的 [COPYING 文件](/COPYING)）。
